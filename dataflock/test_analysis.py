@@ -14,7 +14,7 @@ def test_exposed_variables():
 
 
 def test_depend_variables_are_found_using_analysis(mocker):
-    fake_find_missing = mocker.patch('analysis.find_missing_vars')
+    fake_find_missing = mocker.patch('analysis.find_missing_vars', autospec=True)
 
     text = dedent("""
         hola = 1
