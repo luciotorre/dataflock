@@ -48,7 +48,3 @@ async def test_execution():
         with pytest.raises(subrpc.RemoteException):
             result = await echo.do_raise()
     
-@pytest.mark.asyncio
-async def test_execution():
-    with rpc(RpcTestSlave) as echo:
-        result = await echo.do_raise()
