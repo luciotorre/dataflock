@@ -1,3 +1,8 @@
 attrs
 pytest
 pytest-mock
+pytest-asyncio
+raven
+aioprocessing
+fire
+aiohttp
